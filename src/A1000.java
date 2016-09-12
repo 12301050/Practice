@@ -9,6 +9,6 @@ public class A1000 {
     int a = scanner.nextInt();
     int b = scanner.nextInt();
     System.out.println(a+b);
-    System.out.println("Enheng~!@");
+    System.out.println("Enheng~");
   }
 }
