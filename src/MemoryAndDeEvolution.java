@@ -3,6 +3,7 @@ import java.util.Scanner;
 /**
  * Created by Kafukaaa on 16/9/12.
  */
+/*本题要点：逆向思维，贪婪算法*/
 public class MemoryAndDeEvolution {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
