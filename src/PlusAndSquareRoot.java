@@ -1,4 +1,3 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -12,14 +11,14 @@ public class PlusAndSquareRoot {
 
     long x = 2, k = 2, m = 1;
     while (k <= n+1){
-      if (x % m == 0) {
-        j = k * m;
-        answer = j*k - x / m;
+      if (x%m == 0) {
+        j = k*m;
+        answer = j*k - x/m;
         x = j;
         k++;
         System.out.println(answer);
       }
-      m ++;
+      m++;
     }
   }
 }
