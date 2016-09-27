@@ -10,21 +10,26 @@ public class AnatolyAndCockroaches {
     String cockroaches = scanner.next();
 
     char[] c = cockroaches.toCharArray();
-    int answer =0;
-    if (n == 1){
-      answer = 0;
-    }else if (n == 2){
-      if (c[0] == c[1]){
-        answer = 1;
-      }else {
-        answer = 0;
-      }
-    }else if (n%3 == 0){
-      for (int i = 0; i < n/3; i++) {
-        if ((c[i*3-3] == c[i*3-2] && c[i*3] == c[i*3-1])){
-          answer++;
+    int b1 = 0, b2 = 0, r1 = 0, r2 = 0;
+    int color1 = 'b', color2 = 'r';
+    for (int i = 0; i < n; i++) {
+      if (color1 != c[i]) {
+        if (c[i] == 'b') {
+          b1++;
+        } else {
+          r1++;
         }
       }
+      if (color2 != c[i]){
+        if (c[i] == 'b'){
+          b2++;
+        }else {
+          r2++;
+        }
+      }
+      color1 = 'b'+'r' - color1;
+      color2 = 'b'+'r' - color2;
     }
+    System.out.println(Math.min(Math.max(b1,r1),Math.max(b2,r2)));
   }
 }
