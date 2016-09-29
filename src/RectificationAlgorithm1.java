@@ -7,13 +7,9 @@ public class RectificationAlgorithm1 {
   private static double a = 6378245.0;
   private static double ee = 0.00669342162296594323;
 
-  public static Point transform(int p_Lng, int p_Lat)
+  public static double[] transform(double wgLon, double wgLat)
   {
-    double wgLon = 0.000001 * p_Lng, wgLat = 0.000001 * p_Lat;
-    if (outOfChina(wgLat, wgLon))
-    {
-      return new Point(p_Lng, p_Lat);
-    }
+    double[] result = new double[2];
     double dLat = transformLat(wgLon - 105.0, wgLat - 35.0);
     double dLon = transformLon(wgLon - 105.0, wgLat - 35.0);
     double radLat = wgLat / 180.0 * pi;
@@ -22,7 +18,9 @@ public class RectificationAlgorithm1 {
     double sqrtMagic = Math.sqrt(magic);
     dLat = (dLat * 180.0) / ((a * (1 - ee)) / (magic * sqrtMagic) * pi);
     dLon = (dLon * 180.0) / (a / sqrtMagic * Math.cos(radLat) * pi);
-    return new Point((int)((wgLon + dLon) * 1000000), (int)((wgLat + dLat) * 1000000));
+    result[0] = wgLon + dLon;
+    result[1] = wgLat + dLat;
+    return result;
   }
 
   private static boolean outOfChina(double lat, double lon)
@@ -52,8 +50,8 @@ public class RectificationAlgorithm1 {
     return ret;
   }
   public static void main(String[] args){
-    transform(116298602,39943943);
-    System.out.println(transform(116297366,39947943).getX());
-    System.out.println(transform(116297366,39947943).getY());
+    double x = 116.298588, y = 39.944661;
+    System.out.println("Before:"+ x +" "+y);
+    System.out.println("After:"+transform(x,y)[0]+" "+transform(x,y)[1]);
   }
 }
