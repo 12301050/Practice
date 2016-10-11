@@ -50,7 +50,7 @@ public class RectificationAlgorithm1 {
     return ret;
   }
   public static void main(String[] args){
-    double x = 116.298588, y = 39.944661;
+    double x = 116.342428, y = 39.953456;
     System.out.println("Before:"+ x +" "+y);
     System.out.println("After:"+transform(x,y)[0]+" "+transform(x,y)[1]);
   }
