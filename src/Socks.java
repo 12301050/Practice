@@ -27,6 +27,21 @@ public class Socks {
     for (int i = 0; i < m; i++) {
 
     }
+    /*for (int i = 0; i < m; i++) {
+      if (socks[l[i]] != socks[r[i]]){
+        if (times[socks[l[i]]] > times[socks[r[i]]]){
+          socks[r[i]] = socks[l[i]];
+          times[socks[l[i]]]--;
+          times[socks[r[i]]]--;
+        }else {
+          socks[l[i]] = socks[r[i]];
+          times[socks[l[i]]]--;
+          times[socks[r[i]]]--;
+        }
+        result++;
+      }
+
+    }*/
     System.out.println(result);
 
   }

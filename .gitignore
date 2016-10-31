@@ -1,3 +1,24 @@
+<<<<<<< HEAD
 /.idea/
 .idea/workspace.xm
 .DS_Store
+=======
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+
+# Intellij project files
+*.iml
+.idea/
+*.iws
+
+# maven
+target/
+logs/
+.DS_Store
+
+# Mac
+.DS_Store
+>>>>>>> 742d3c0400a1cc245e618bcb0a5df5680a5cc043
