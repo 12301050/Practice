@@ -4,11 +4,10 @@ import java.util.Scanner;
  * Created by Kafukaaa on 2016/8/26.
  */
 public class A1000 {
-  public static void main(String[] args) throws Exception{
+  public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
-    int a = scanner.nextInt();
-    int b = scanner.nextInt();
-    System.out.println(a+b);
-    System.out.println("Enheng~1111");
+    String province = null;
+    while (true){
+    }
   }
 }
