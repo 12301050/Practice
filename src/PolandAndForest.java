@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -7,21 +9,19 @@ public class PolandAndForest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Integer n = scanner.nextInt();
-        Integer m = scanner.nextInt();
-        int[] nodes = new int[n];
-        for (int i = 0; i < m*2; i++) {
-            nodes[scanner.nextInt()-1]++;
-        }
-
-        Integer n0 = 0, n1 = 0;
+        List<Integer> nodes = new ArrayList<>();
+        Integer n0 = 0, n1 = 0, node;
         for (int i = 0; i < n; i++) {
-            if (nodes[i] == 0){
+            node = scanner.nextInt();
+            if (node-1 == i){
                 n0++;
-            }else if (nodes[i] == 1){
+            }else if (!nodes.contains(node)){
+                nodes.add(node);
                 n1++;
             }
         }
 
-        System.out.println(n0+(n1/2));
+        System.out.println(n0+n1/2);
+
     }
 }
