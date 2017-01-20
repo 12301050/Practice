@@ -19,6 +19,4 @@ target/
 logs/
 .DS_Store
 
-# Mac
-.DS_Store
->>>>>>> 742d3c0400a1cc245e618bcb0a5df5680a5cc043
+out/
