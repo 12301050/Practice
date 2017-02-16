@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Attention1.iml" filepath="$PROJECT_DIR$/Attention1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../aipk/aipk.iml" filepath="$PROJECT_DIR$/../aipk/aipk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../aipk/aipk-web/aipk-web.iml" filepath="$PROJECT_DIR$/../aipk/aipk-web/aipk-web.iml" />
     </modules>
   </component>
 </project>

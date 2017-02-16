@@ -1,5 +1,3 @@
-import sun.org.mozilla.javascript.internal.ast.IfStatement;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
