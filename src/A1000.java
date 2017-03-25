@@ -24,8 +24,15 @@ public class A1000 {
     return xmlUTF8;
   }
   public static void main(String[] args){
-    String result = getUTF8XMLString("我爱洗澡");
-    System.out.println(result);
-    System.out.println(System.currentTimeMillis());
+//    String result = getUTF8XMLString("我爱洗澡");
+//    System.out.println(result);
+//    System.out.println(System.currentTimeMillis());
+    int f = 1, s = 2, t = 0;
+    for (int i = 0; i < 15; i++) {
+      t = f + s;
+      f = s;
+      s = t;
+      System.out.println(t);
+    }
   }
 }

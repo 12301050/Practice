@@ -9,6 +9,12 @@
         <option value="$PROJECT_DIR$/../aipk/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../aipk/aipk-web/pom.xml" />
+        <option value="$PROJECT_DIR$/../aipk/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
