@@ -20,5 +20,5 @@ logs/
 .DS_Store
 
 out/
-/src/TestAI/
+/src/testAI/
 /src/A1000.java
