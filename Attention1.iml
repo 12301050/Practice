@@ -19,5 +19,26 @@
     </orderEntry>
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="jsoup-1.10.2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/yarn" />
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/common" />
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/hdfs" />
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/mapreduce" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/common/jdiff" />
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/hdfs/jdiff" />
+          <root url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/mapreduce/jdiff" />
+        </SOURCES>
+        <jarDirectory url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/common" recursive="false" />
+        <jarDirectory url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/hdfs" recursive="false" />
+        <jarDirectory url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/mapreduce" recursive="false" />
+        <jarDirectory url="file:///usr/local/Cellar/hadoop/2.8.0/libexec/share/hadoop/yarn" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="yarn" level="project" />
   </component>
 </module>
