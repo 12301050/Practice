@@ -11,7 +11,7 @@ import java.util.Map;
 // */
 public class A1000 {
     public static void main(String[] args) {
-        Map<String, Object> map = new HashMap<String, Object>();
+        /*Map<String, Object> map = new HashMap<String, Object>();
         Map<String, Object> map1 = new HashMap<String, Object>();
 
         map.put("1", new Integer(1));
@@ -21,7 +21,14 @@ public class A1000 {
         map.putAll(map1);
         System.out.println(map1);
 
-        System.out.println(map);
+        System.out.println(map);*/
+
+        String s1 = "Programming";
+        String s2 = new String("Programming");
+        String s3 = "Program" + "ming";
+        System.out.println(s1 == s2);
+        System.out.println(s1 == s3);
+        System.out.println(s1 == s1.intern());
     }
 }
 //        Scanner scanner = new Scanner(System.in);
